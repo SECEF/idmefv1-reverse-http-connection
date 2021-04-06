@@ -30,7 +30,7 @@ Disable SELinux:
 
 ..  note::
 
-    You may want to disable SELinux permanently by editing :file:`/etc/selinux/config`
+    You may want to disable SELinux permanently by editing ``/etc/selinux/config``
     and rebooting.
 
 Install dependencies:
@@ -40,7 +40,7 @@ Install dependencies:
     sudo yum install -y epel-release
     sudo yum install -y python-lxml python-requests
 
-On both the sensor and the manager, create :file:`/usr/local/secef/`
+On both the sensor and the manager, create ``/usr/local/secef/``
 and copy all the files into that folder.
 
 Install the script on the sensor:
@@ -101,8 +101,8 @@ Several sensors can be queried by enabling multiple instances of the service's t
 
     sudo systemctl enable http-proxy@sensor1.timer http-proxy@sensor2.timer
 
-The file :file:`/etc/sysconfig/http-proxy` serves as a common configuration file for
-every instance, while :file:`/etc/sysconfig/http-proxy@{profile}` serves as an
+The file ``/etc/sysconfig/http-proxy`` serves as a common configuration file for
+every instance, while ``/etc/sysconfig/http-proxy@{profile}`` serves as an
 instance-specific configuration file for the instance named ``profile``.
 
 ..  note::
