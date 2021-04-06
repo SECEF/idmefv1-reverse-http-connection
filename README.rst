@@ -1,3 +1,22 @@
+SECEF reverse web gateway (pull mode)
+#####################################
+
+This repository contains a small daemon that fetches security alerts encoded using
+IDMEFv1 XML messages from a remote web server and forwards them to a web gateway.
+
+This daemon is useful in contexts where the IDMEF sensors are unable to send their
+alerts to a manager directly (e.g. in a DMZ) and instead expect the manager
+to establish a reverse connection to fetch new alerts periodically.
+
+An implementation of a compatible web gateway is also available at
+https://github.com/SECEF/secef-web-gateway.
+This particular implementation forwards IDMEFv1 messages to a Prelude SIEM manager.
+
+For more information about the Intrusion Detection Message Exchange Format (IDMEF) version 1,
+see https://tools.ietf.org/html/rfc4765.
+
+For more information about Prelude SIEM, see https://www.prelude-siem.org/.
+
 Installation
 ============
 
